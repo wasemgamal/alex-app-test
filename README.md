@@ -7,6 +7,8 @@ This is a simple test to evaluate your skills in JavaScript and Nuxt.js.
 1. Fork this repository
 2. Create a new branch with your name
 3. Complete the test
+4. Push your changes to your forked repository
+5. Send us the link to your forked repository
 
 *P.S. dot not forget to commit your changes.*
 
