@@ -36,13 +36,23 @@ Server listening on port http://localhost:4000
 
 [Postman Collection (⬇️Download)](https://api.postman.com/collections/2008200-b6fd706b-c4ec-498a-b044-50e0af95505f?access_key=PMAT-01GMAG1BQ7GD4P89M2Q2KFFT51)
 
-| Method | Auth | Endpoint | Description |
-| ------ | ---- | -------- | ----------- |
-| GET | No | /users | Get all users |
-| GET | Yes | /todos | Get user todos |
-| POST | Yes | /todos | Create a new todo |
-| PUT | Yes | /todos/:id | Toggle todo completion |
-| DELETE | Yes | /todos/:id | Delete a todo |
+| Method | Auth | Endpoint | Body | Description |
+| ------ | ---- | -------- | ---- | ----------- |
+| GET | No | /users | | Get all users |
+| GET | Yes | /todos | | Get user todos |
+| POST | Yes | /todos | task `string` | Create a new todo |
+| PUT | Yes | /todos/:id | | Toggle todo completion |
+| DELETE | Yes | /todos/:id | | Delete a todo |
+
+**Body type**: `application/json`
+
+*Example body*:
+
+```json
+{
+  "task": "Buy milk"
+}
+```
 
 ### Authentication
 
